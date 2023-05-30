@@ -30,15 +30,19 @@ application: ml-accelerator {
   }
 }
 
+
 constant: CONNECTION_NAME {
-  value: "ml-accelerator"
-  export: override_required
+  value: "marketing-analytics"
+#   value: "ml-accelerator"
+#   export: override_required
 }
 
+
+
 constant: BQML_MODEL_DATASET_NAME {
-  value: "{{_user_attributes['marketplace_bqml_ext_ml_accelerator_bqml_model_dataset_name']}}"
+  value: "{{_user_attributes['app_ml_accelerator_andyclone_again_ml_accelerator_bqml_model_dataset_name']}}"
 }
 
 constant: GCP_PROJECT {
-  value: "{{_user_attributes['marketplace_bqml_ext_ml_accelerator_gcp_project']}}"
+  value: "{{_user_attributes['app_ml_accelerator_andyclone_again_ml_accelerator_gcp_project']}}"
 }
